@@ -33,8 +33,8 @@ function Get-ALConfiguration
         $optionalParameters,
         $EnableSymbolLoading=$true,
         $CreateTestWebServices=$true,
-        $TestLibraryOnly=$false,
-        $CustomScripts
+        $TestLibraryOnly=$false
+
     )
 
     function Get-ResultPath
@@ -87,7 +87,6 @@ function Get-ALConfiguration
     $Configuration | Add-Member -MemberType NoteProperty -Name 'CreateTestWebServices' -Value $CreateTestWebServices
     $Configuration | Add-Member -MemberType NoteProperty -Name 'IncludeCSide' -Value $IncludeCSide
     $Configuration | Add-Member -MemberType NoteProperty -Name 'TestLibraryOnly' -Value $TestLibraryOnly
-    $Configuration | Add-Member -MemberType NoteProperty -Name 'CustomScripts' -Value $CustomScripts
     
 
 
